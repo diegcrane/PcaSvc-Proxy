@@ -9,7 +9,7 @@ Use Pca process as a proxy to do Read and Write calls on protected processes.
 #### 3. Find the address that holds the handle to the target process, this must be done remotely as Pca has Strict handle checks
 #### 4. Allocate a PAGE_EXECUTE_READWRITE memory region to write the shell code and the request object.
 #### 5. Allocate two memory pages to pass read and write buffers to the shell code.
-#### 6. Create a remote thread on the shell code base address. Hijacking an already existing thread would be better but Controll Flow Guard would raise an exception.
+#### 6. Create a remote thread on the shell code base address.
 #### 7. Use proxy::rvm and proxy::wvm
 
 ## License
